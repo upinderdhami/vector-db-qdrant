@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.idea/
+.vscode/
+.DS_Store
+qdrant_storage/
+*.json
+!pyproject.toml
+poetry.lock
