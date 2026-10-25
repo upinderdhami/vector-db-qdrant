@@ -5,9 +5,9 @@ Each stage is a separate script so earlier work is never overwritten:
 
   poetry run python stage_1.py   # load arXiv embeddings into Qdrant
   poetry run python stage_2.py   # print top-5 papers similar to 1311.5068
-  poetry run python stage_3.py   # (later) natural-language search via OpenAI
-  poetry run python stage_4.py   # (later) filters / keys
-  poetry run python stage_5.py   # (later) FastAPI wrap
+  poetry run python stage_3.py   # natural-language search via OpenAI embeddings
+  poetry run python stage_4.py   # NL search + payload filter (categories)
+  poetry run python stage_5.py   # FastAPI GET /api/search on :8000
 
 Shared client/config: common.py
 
